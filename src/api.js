@@ -1,12 +1,14 @@
-import apiClient from '@/api.js';
+import axios from 'axios';
 
-const apiClient = apiClient.create({
+// تعريف واحد فقط وصحيح
+const apiClient = axios.create({
   baseURL: `${import.meta.env.VITE_API_URL}/api`,
 });
 
+// إضافة التوكن تلقائياً لكل طلب
 apiClient.interceptors.request.use(
   (config) => {
-    const token = localStorage.getItem('authToken'); // تأكد من أنك تخزن التوكن بهذا الاسم
+    const token = localStorage.getItem('authToken');
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }
