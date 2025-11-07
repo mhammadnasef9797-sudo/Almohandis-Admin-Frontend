@@ -1,4 +1,4 @@
-import apiClient from './api.js';
+import apiClient from '@/api.js';
 
 const apiClient = apiClient.create({
   baseURL: `${import.meta.env.VITE_API_URL}/api`,

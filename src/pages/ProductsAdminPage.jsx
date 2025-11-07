@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import apiClient from './api.js';
+import apiClient from '@/api.js';
 import { toast } from 'react-toastify';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';

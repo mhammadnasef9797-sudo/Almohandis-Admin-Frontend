@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import apiClient from './api.js';
+import apiClient from '@/api.js';
 import Modal from '../components/Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';

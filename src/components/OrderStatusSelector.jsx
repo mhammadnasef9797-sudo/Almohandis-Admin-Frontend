@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import apiClient from './api.js';
+import apiClient from '@/api.js';
 
 const selectStyle = {
   padding: '0.5rem',

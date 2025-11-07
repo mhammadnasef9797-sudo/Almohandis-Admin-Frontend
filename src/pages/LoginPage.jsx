@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import apiClient from './api.js';
+import apiClient from '@/api.js';
 import { useAuth } from '../context/AuthContext';
 
 const loginPageStyle = { /* Styling for centering */

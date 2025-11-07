@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import apiClient from './api.js';
+import apiClient from '@/api.js';
 
 const tableContainerStyle = { background: 'white', borderRadius: '8px', boxShadow: '0 2px 10px rgba(0,0,0,0.05)' };
 const thStyle = { padding: '1rem', textAlign: 'right', borderBottom: '2px solid var(--border-color)', color: '#64748b' };
