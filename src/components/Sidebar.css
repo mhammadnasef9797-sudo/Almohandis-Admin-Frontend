@@ -1,0 +1,93 @@
+.sidebar {
+  background-color: var(--surface-color); /* أصبح أبيض الآن */
+  color: var(--text-primary);
+  width: 260px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08); /* ظل خفيف */
+  border-left: 1px solid var(--border-color); /* خط فاصل رقيق */
+}
+
+.sidebar-header {
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+.sidebar-title {
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.sidebar-nav {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.sidebar-nav a {
+  color: var(--text-secondary);
+  padding: 0.8rem 1rem;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+.sidebar-nav a:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  color: var(--text-primary);
+}
+.sidebar-nav a.active {
+  background-color: var(--primary-color);
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(63, 81, 181, 0.2);
+}
+
+/* Footer section of the sidebar */
+.sidebar-footer {
+  border-top: 1px solid var(--border-color);
+  padding: 1rem;
+}
+.admin-info {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+.admin-avatar {
+  background-color: var(--primary-color);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.admin-name { font-weight: 500; }
+
+.logout-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0.8rem;
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+.logout-button:hover {
+  background-color: var(--background-color);
+  color: var(--text-primary);
+}
